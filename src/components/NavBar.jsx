@@ -7,8 +7,10 @@ const NavBar = () => {
     return (
         <div className='w-full h-20 flex items-center z-40 py-1 px-4 fixed left-0 right-0 top-0 bg-white'>
             <div className='h-14 w-full flex items-center gap-4'>
-                <div className='flex items-center gap-4'>
-                    <FaPinterest className='text-red-600' size={25}/>
+                <div className='flex items-center'>
+                    <div className='size-12 flex items-center justify-center rounded-full hover:bg-[#dfdfdf] cursor-pointer'>
+                        <FaPinterest className='text-red-600' size={25}/>
+                    </div>
                     <div className='h-12 bg-black px-4 overflow-hidden rounded-full'>
                         <button className='text-white h-full text-base font-semibold text-nowrap'>หน้าหลัก</button>
                     </div>
