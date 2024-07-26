@@ -131,7 +131,9 @@ const imageData = [
     {
         img: 'https://i.pinimg.com/236x/32/96/ac/3296ac9c6c3961a4e8317a0151eb170f.jpg'
     },
-    
+    {
+        img: 'https://i.pinimg.com/564x/36/9b/e5/369be583a6e68a9b11293da0df9fc85c.jpg'
+    },
 ];
 
 export default imageData
