@@ -2,6 +2,7 @@ import React from 'react'
 import { FaPinterest, FaCommentDots, FaChevronDown  } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { IoIosNotifications } from "react-icons/io";
+import Tooltips from './Tooltips';
 
 const NavBar = () => {
     return (
@@ -41,27 +42,31 @@ const NavBar = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee]'>
+                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <IoIosNotifications className='text-[#767676]' size={30}/>
                         </a>
+                        <Tooltips textTips={'การแจ้งเตือน'}/>
                     </div>
-                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee]'>
+                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <FaCommentDots className='text-[#767676]' size={26}/>
                         </a>
+                        <Tooltips textTips={'ข้อความ'}/>
                     </div>
-                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee]'>
+                    <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <div className='size-6 bg-slate-500 rounded-full overflow-hidden'>
                                 <img src="https://i.pinimg.com/75x75_RS/63/1e/53/631e53700ce9c9bbdc5c8d529956fc29.jpg" alt="" />
                             </div>
                         </a>
+                        <Tooltips textTips={'โปรไฟล์ของคุณ'}/>
                     </div>
-                    <div className='size-6 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee]'>
+                    <div className='size-6 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <FaChevronDown className='text-[#767676]' size={16}/>
                         </a>
+                        <Tooltips textTips={'บัญชีและตัวเลือกเพิ่มเติม'}/>
                     </div>
                 </div>
             </div>

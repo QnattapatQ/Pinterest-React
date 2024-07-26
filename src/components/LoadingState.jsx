@@ -26,25 +26,6 @@ const LoadingState = () => {
             autoAlpha: 0,
             delay: 4.2
         });
-
-        // gsap.to(".logo-pin", {
-        //     keyframes: {
-        //         "25%": { scale: 5, opacity: 1},
-        //         "50%": { scale: 10, opacity: 1},
-        //         "75%": { scale: 5, opacity: 1},
-        //         "100%": { scale: 10, opacity: 0 },
-        //         duration: 10
-        //     }
-        // });
-        // gsap.fromTo(".logo-pin", {
-        //     scale: 1,
-        //     duration: 1
-        // },
-        // {
-        //     scale: 50,
-        //     opacity: 0,
-        //     duration: 0.5
-        // });
     });
     
     return (
