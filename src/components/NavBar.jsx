@@ -25,34 +25,35 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className='relative w-full h-12 flex items-center px-2 max-md:hidden group/input'>
-                    <div className='bg-[rgb(241_241_241)] h-full flex items-center pl-4 rounded-tl-full rounded-bl-full group-hover/'>
+                    <div className='bg-[rgb(241_241_241)] h-full flex items-center pl-4 rounded-tl-full rounded-bl-full group-hover/input:bg-[rgb(226,226,226)]'>
                         <IoSearchSharp className='mr-2 text-[#767676]' size={20}/>
                     </div>
                     <input 
                         type="text"
-                        className='h-full w-full bg-[rgb(241_241_241)] outline-none placeholder:text-[#767676] rounded-tr-full rounded-br-full'
+                        className='h-full w-full bg-[rgb(241_241_241)] outline-none placeholder:text-[#767676] group-hover/input:bg-[rgb(226,226,226)] rounded-tr-full rounded-br-full'
                         placeholder='ค้นหา' 
                     />
                 </div>
                 <div className='flex items-center'>
                     <div className='hidden max-md:inline-block'>
-                        <div className='size-12  cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee]'>
+                        <div className='size-12  cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                             <a href="#">
                                 <IoSearchSharp className='ml-[5%] text-[#767676]' size={24}/>
                             </a>
+                            <Tooltips textTips={'ค้นหา'} toolPosition={'bottom'}/>
                         </div>
                     </div>
                     <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <IoIosNotifications className='text-[#767676]' size={30}/>
                         </a>
-                        <Tooltips textTips={'การแจ้งเตือน'}/>
+                        <Tooltips textTips={'การแจ้งเตือน'} toolPosition={'bottom'}/>
                     </div>
                     <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <FaCommentDots className='text-[#767676]' size={26}/>
                         </a>
-                        <Tooltips textTips={'ข้อความ'}/>
+                        <Tooltips textTips={'ข้อความ'} toolPosition={'bottom'}/>
                     </div>
                     <div className='size-12 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
@@ -60,13 +61,13 @@ const NavBar = () => {
                                 <img src="https://i.pinimg.com/75x75_RS/63/1e/53/631e53700ce9c9bbdc5c8d529956fc29.jpg" alt="" />
                             </div>
                         </a>
-                        <Tooltips textTips={'โปรไฟล์ของคุณ'}/>
+                        <Tooltips textTips={'โปรไฟล์ของคุณ'} toolPosition={'bottom'}/>
                     </div>
                     <div className='size-6 cursor-pointer flex items-center justify-center rounded-full hover:bg-[#eeeeee] relative group/tooltip'>
                         <a href="#">
                             <FaChevronDown className='text-[#767676]' size={16}/>
                         </a>
-                        <Tooltips textTips={'บัญชีและตัวเลือกเพิ่มเติม'}/>
+                        <Tooltips textTips={'บัญชีและตัวเลือกเพิ่มเติม'} toolPosition={'bottom'}/>
                     </div>
                 </div>
             </div>
